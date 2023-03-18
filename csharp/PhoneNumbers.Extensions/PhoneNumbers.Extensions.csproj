@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <Description>Supporting features to go along with libphonenumber-csharp above and beyond the feature set of Java libphonenumber. Adds functionality better matching C# paradigms, etc.</Description>
         <Title>libphonenumber-csharp.extensions</Title>
         <AssemblyName>PhoneNumbers.Extensions</AssemblyName>
         <PackageId>libphonenumber-csharp.extensions</PackageId>
-        <VersionPrefix>$(APPVEYOR_BUILD_VERSION)-alpha1</VersionPrefix>
+        <VersionPrefix>$(APPVEYOR_BUILD_VERSION)</VersionPrefix>
         <Authors>Thomas Clegg</Authors>
         <TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
         <LangVersion>preview</LangVersion>
@@ -28,7 +28,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="..\..\icon.png" Pack="true" PackagePath=""/>
+        <None Include="..\..\icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 
     <ItemGroup>

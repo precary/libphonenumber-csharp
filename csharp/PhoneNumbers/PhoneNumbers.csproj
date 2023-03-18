@@ -27,7 +27,7 @@
   <ItemGroup>
     <EmbeddedResource Include="..\..\resources\*.xml" Exclude="..\..\resources\PhoneNumberMetadataForTesting.xml" />
     <EmbeddedResource Include="..\..\resources\timezones\map_data.txt" LinkBase="timezones" />
-    <None Include="..\..\icon.png" Pack="true" PackagePath=""/>
+    <None Include="..\..\icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('..\..\resources\geocoding.zip')">
@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0' ">
